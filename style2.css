@@ -1,107 +1,108 @@
-@media(min-width:1024px){
-#header{
-    background-color:whitesmoke;
-    color:black;
+/* Base Styles (desktop-first) */
+#header {
+    background-color: whitesmoke;
+    color: black;
     font-family: 'Times New Roman', Times, serif;
-    text-align:center;
-    width:1500px;
-    height:160px;
-    margin-right:20px;
-    border:3px solid black;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+    border: 3px solid black;
+    box-sizing: border-box;
 }
-h1{
-    font-size:50px;
-       
-}
-a{
-    font-size:25px;
-    display:inline-block;
-    margin-right:50px;
-    text-decoration: none;
-    color:black;
-}
-a:hover{
-    color:burlywood;
-}
-#body{
-    margin-top:30px;
-    background-color:whitesmoke;
-    border:2px solid black;
-    border-radius:25px 25px 25px 25px;
-    width:500px;
-    height:500px;
-    text-align:center;
-    margin-left:500px;
-}
-input{
-    width:200px;
-    height:40px;
-    margin-top:20px;
-    border:2px solid black;
 
+h1 {
+    font-size: 50px;
+    margin: 0;
 }
-button{
-    background-color: beige;
-    color:olive;
-    width:200px;
-    height:40px;
-    border:2px solid black;
-    margin-top:20px;
-    }
-button:hover{
-    background:aqua;
-}
-}
-@media(max-width:767px){
-    #header{
-    background-color:whitesmoke;
-    color:black;
-    font-family: 'Times New Roman', Times, serif;
-    text-align:center;
-    width:400px;
-    height:60px;
-    margin-right:10px;
-    border:3px solid black;
-}
-h1{
-    font-size:30px;
-       
-}
-a{
-    font-size:15px;
-    display:inline-block;
-    margin-right:50px;
+
+a {
+    font-size: 25px;
+    display: inline-block;
+    margin-right: 50px;
     text-decoration: none;
-    color:black;
+    color: black;
 }
-a:hover{
-    color:burlywood;
+
+a:hover {
+    color: burlywood;
 }
-#body{
-    margin-top:15px;
-    background-color:whitesmoke;
-    border:2px solid black;
-    border-radius:25px 25px 25px 25px;
-    width:250px;
-    height:250px;
-    text-align:center;
-    margin-left:100px;
+
+#body {
+    margin-top: 30px;
+    background-color: whitesmoke;
+    border: 2px solid black;
+    border-radius: 25px;
+    width: 40%;
+    min-width: 300px;
+    max-width: 500px;
+    padding: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
 }
-input{
-    width: 110px;
-    height:30px;
-    margin-top:10px;
-    border:2px solid black;
+
+input {
+    width: 90%;
+    max-width: 300px;
+    height: 40px;
+    margin-top: 20px;
+    border: 2px solid black;
+    box-sizing: border-box;
 }
-button{
+
+button {
     background-color: beige;
-    color:olive;
-    width:110px;
-    height:30px;
-    border:2px solid black;
-    margin-top:10px;
-    }
-button:hover{
-    background:aqua;
+    color: olive;
+    width: 90%;
+    max-width: 300px;
+    height: 40px;
+    border: 2px solid black;
+    margin-top: 20px;
+    cursor: pointer;
 }
+
+button:hover {
+    background: aqua;
+}
+
+/* Medium Screens (Tablets and small laptops ≤1024px) */
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    a {
+        font-size: 20px;
+        margin-right: 30px;
+    }
+
+    #body {
+        width: 60%;
+    }
+}
+
+/* Small Screens (Phones ≤768px) */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    a {
+        font-size: 18px;
+        display: block;
+        margin: 10px 0;
+    }
+
+    #body {
+        width: 90%;
+        padding: 15px;
+    }
+
+    input, button {
+        width: 100%;
+        max-width: 100%;
+    }
 }
