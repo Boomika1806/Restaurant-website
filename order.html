@@ -1,10 +1,48 @@
 <!DOCTYPE html>
 <head>
     <title>Order here</title>
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-    <form>
-        <input type="name " placeholder="Enter your name" name="Fullname">
+    <div id="header">
+    <h1><i>Street of Arabia</i></h1>
+    <a href="index.html">Home</a>
+    <a href="order.html">Order now</a>
+    </div>
+    <div id="body">
         
+    <form>
+       Name: <input type="name " placeholder="Enter your name" name="Fullname"><br>
+       Email: <input type="email" placeholder="Enter your email" name="Email"><br>
+       Password: <input type="password" placeholder="password" name="Password"><br>
+       <input type="dishes" list="dishes" placeholder="Select the dish">
+       <datalist id="dishes">
+        <option value="Tandoori"></option>
+        <option value="burger"></option>
+        <option value="pizza"></option>
+        <option value="Grill"></option>
+        <option value="Chicken-lollipop"></option>
+        <option value="Chicken-popcorn"></option>
+        <option value="Kebab"></option>
+        <option value="Mandhi"></option>
+        <option value="Paneer-tikka"></option>
+        <option value="Shawarma"></option>
+       </datalist><br>
+       <input name="Quantity" list="Quantity" placeholder="Select the Quantity">
+    <datalist id="Quantity">
+        <option value="1"></option>
+        <option value="2"></option>
+        <option value="3"></option>
+        <option value="4"></option>
+        <option value="5"></option>
+    </datalist><br>
+    <input name="location" list="location" placeholder="Enter the location">
+    <datalist id="location">
+        <option value="Saravanampatti"></option>
+        <option value="Gandhipuram"></option>
+        <option value="Thudiyalur"></option>
+     </datalist><br>
+     <button>Submit</button>
     </form>
+    </div>
 </body>
