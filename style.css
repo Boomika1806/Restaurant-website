@@ -1,113 +1,126 @@
-@media(min-width:1024px){
-#header{
-    background-color:whitesmoke;
-    color:black;
+/* Base Styles (for desktops/laptops by default) */
+#header {
+    background-color: whitesmoke;
+    color: black;
     font-family: 'Times New Roman', Times, serif;
-    text-align:center;
-    width:1500px;
-    height:160px;
-    margin-right:20px;
-    border:3px solid black;
-}
-h1{
-    font-size:50px;
-       
-}
-a{
-    font-size:25px;
-    display:inline-block;
-    margin-right:50px;
-    text-decoration: none;
-    color:black;
-}
-a:hover{
-    color:burlywood;
-}
-img{
-    width:200px;
-    height:200px;
-    margin-right:50px;
-     padding:20px;
-    justify-content: space-between;
-    margin-left:10px;
-    border-radius: 25px 25px 25px 25px;
-}
-#container{
-    margin-top:40px;
-}
-p{
-      color:maroon;
-    font-size:25px;
-    font-family: 'Times New Roman', Times, serif;
-    margin-left:70px;
-    margin-top:0px;
-    display:flex;
-}
-    
-
-.box{
-    border:2px solid white;
-    border-radius:30px 30px 30px 30px;
-    width:280px;
-    height:270px;
-    display:inline-block;
-    margin-left:80px;
-   
-}
-}
-@media(max-width:767px){
-    #header{
-    background-color:whitesmoke;
-    color:black;
-    font-family: 'Times New Roman', Times, serif;
-    text-align:center;
-    width:340px;
-    height:100px;
-    margin-right:10px;
-    border:3px solid black;
-}
-h1{
-    font-size:30px;
-       
-}
-a{
-    font-size:15px;
-    display:inline-block;
-    margin-right:50px;
-    text-decoration: none;
-    color:black;
-}
-a:hover{
-    color:burlywood;
-}
-img{
-    width:100px;
-    height:100px;
-    margin-right:20px;
-     padding:10px;
-    justify-content: space-between;
-    margin-left:10px;
-    border-radius: 25px 25px 25px 25px;
-}
-#container{
-    margin-top:20px;
-}
-p{
-    color:maroon;
-    font-size:15px;
-    font-family: 'Times New Roman', Times, serif;
-    margin-left:35px;
-    margin-top:0px;
-    display:flex;
+    text-align: center;
+    width: 100%;
+    height: 160px;
+    border: 3px solid black;
+    box-sizing: border-box;
+    padding: 10px;
 }
 
-.box{
-    border:2px solid white;
-    border-radius:30px 30px 30px 30px;
-    width:130px;
-    height:130px;
-    display:inline-block;
-    margin-left:80px;
-   margin-top:30px;
+h1 {
+    font-size: 50px;
 }
+
+a {
+    font-size: 25px;
+    display: inline-block;
+    margin-right: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: burlywood;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+#container {
+    margin-top: 40px;
+}
+
+p {
+    color: maroon;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0 0 20px 70px;
+    display: flex;
+}
+
+.box {
+    border: 2px solid white;
+    border-radius: 30px;
+    width: 280px;
+    height: 270px;
+    display: inline-block;
+    margin: 20px;
+}
+
+/* Responsive for tablets and smaller laptops (≤1024px) */
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    a {
+        font-size: 20px;
+        margin-right: 30px;
+    }
+
+    .box {
+        width: 240px;
+        height: 240px;
+        margin: 15px;
+    }
+
+    img {
+        width: 180px;
+        height: 180px;
+    }
+
+    p {
+        font-size: 22px;
+        margin-left: 40px;
+    }
+}
+
+/* Responsive for mobile phones (≤768px) */
+@media screen and (max-width: 768px) {
+    #header {
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    a {
+        font-size: 18px;
+        margin-right: 15px;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .box {
+        display: block;
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    p {
+        font-size: 20px;
+        margin: 10px 20px;
+        flex-direction: column;
+    }
 }
