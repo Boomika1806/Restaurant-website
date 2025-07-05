@@ -1,14 +1,13 @@
 /* Base Styles (for desktops/laptops by default) */
 #header {
-    background-color: whitesmoke;
-    color: black;
+    background-color:whitesmoke;
+    color:black;
     font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-    width: 100%;
-    height: 170px;
-    border: 3px solid black;
-    box-sizing: border-box;
-    padding: 10px;
+    text-align:center;
+    width:1500px;
+    height:160px;
+    margin-right:20px;
+    border:3px solid black;
 }
 
 h1 {
@@ -28,12 +27,13 @@ a:hover {
 }
 
 img {
-    width: 200px;
-    height: 200px;
-    margin: 10px;
-    padding: 20px;
-    border-radius: 25px;
-    object-fit: cover;
+     width:200px;
+    height:200px;
+    margin-right:50px;
+     padding:20px;
+    justify-content: space-between;
+    margin-left:10px;
+    border-radius: 25px 25px 25px 25px;
 }
 
 #container {
@@ -49,13 +49,12 @@ p {
 }
 
 .box {
-    border: 2px solid white;
-    border-radius: 30px;
-    width: 280px;
-    height: 270px;
-    display: inline-block;
-    margin: 20px;
-    margin-left:50px;
+    border:2px solid white;
+    border-radius:30px 30px 30px 30px;
+    width:280px;
+    height:270px;
+    display:inline-block;
+    margin-left:80px;
 }
 
 /* Responsive for tablets and smaller laptops (≤1024px) */
