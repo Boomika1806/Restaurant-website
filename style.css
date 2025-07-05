@@ -110,12 +110,13 @@ p {
         width: 100%;
         height: auto;
         margin: 0 auto;
-        display: block;
+         display: block;
     }
 
     p {
         font-size: 20px;
         margin: 10px 20px;
         flex-direction: column;
+        color:maroon;
     }
 }
